@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/lbl_msg_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message background:"
+        app:layout_constraintBottom_toTopOf="@+id/spin_background"
+        app:layout_constraintStart_toStartOf="@+id/spin_background" />
+
+    <Spinner
+        android:id="@+id/spin_background"
+        android:layout_width="342dp"
+        android:layout_height="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_text_colour"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/lbl_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message:"
+        android:scrollbars = "vertical"
+        android:hint="Type your message here"
+        app:layout_constraintBottom_toTopOf="@+id/txt_msg"
+        app:layout_constraintStart_toStartOf="@+id/txt_msg" />
+
+    <EditText
+        android:id="@+id/txt_msg"
+        android:layout_width="342dp"
+        android:layout_height="157dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/lbl_text_colour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text colour:"
+        app:layout_constraintBottom_toTopOf="@+id/spin_text_colour"
+        app:layout_constraintStart_toStartOf="@+id/spin_text_colour" />
+
+    <Spinner
+        android:id="@+id/spin_text_colour"
+        android:layout_width="342dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_msg" />
+
+    <TextView
+        android:id="@+id/txt_aud_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Title:"
+        app:layout_constraintStart_toStartOf="@+id/spin_background"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_cap_details" />
+
+    <TextView
+        android:id="@+id/txt_aud_recipient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Recipient:"
+        app:layout_constraintStart_toStartOf="@+id/txt_aud_title"
+        app:layout_constraintTop_toBottomOf="@+id/txt_aud_title" />
+
+    <TextView
+        android:id="@+id/txt_aud_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Opening Date:"
+        app:layout_constraintStart_toStartOf="@+id/txt_aud_recipient"
+        app:layout_constraintTop_toBottomOf="@+id/txt_aud_recipient" />
+
+    <Button
+        android:id="@+id/btn_text_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preview Message"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_aud_date" />
+
+    <Button
+        android:id="@+id/btn_msg_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Send Time Capsule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_text_preview" />
+
+    <TextView
+        android:id="@+id/lbl_cap_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Time Capsule Details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

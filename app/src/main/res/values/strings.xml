@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">TCPrototype2</string>
+    <string name="title_home">Home</string>
+    <string name="title_friends_list">Friends List</string>
+    <string name="title_history">History</string>
+    <string name="title_activity_create_capsule">CreateCapsule</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string-array name="friends">
+        <item>Tulisa Acevedo</item>
+        <item>Divine Bernard</item>
+        <item>Charlton Bostock</item>
+        <item>Jean Burch</item>
+        <item>Persephone Ford</item>
+        <item>Tayyab Friedman</item>
+        <item>Justin Guevara</item>
+        <item>Katie Heath</item>
+        <item>Leonie Hensley</item>
+        <item>Pippa Hyde</item>
+        <item>Jace Jacobson</item>
+        <item>Harriette Kearney</item>
+        <item>Ariya Lee</item>
+        <item>Evelyn Mcbride</item>
+        <item>Estelle Norris</item>
+        <item>Kristian Palmer</item>
+        <item>Mahad Raymond</item>
+        <item>Maximillian Vo</item>
+        <item>Giuseppe Wagner</item>
+        <item>Marco Weber</item>
+    </string-array>
+    <string name="title_activity_date_capsule">DateCapsule</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_customize_capsule">CustomizeCapsule</string>
+    <string name="title_activity_record_audio">RecordAudio</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_camera_capture">CameraCapture</string>
+    <string name="title_activity_video_capture">VideoCapture</string>
+    <string name="title_activity_preview_video">PreviewVideo</string>
+    <string name="title_activity_select_gallery">SelectGallery</string>
+    <string name="title_activity_text_message">TextMessage</string>
+    <string-array name="colours">
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Brown</item>
+        <item>Green</item>
+        <item>Grey</item>
+        <item>Orange</item>
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>Red</item>
+        <item>Teal</item>
+        <item>Yellow</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="backgrounds">
+        <item>Plain</item>
+        <item>Autumn</item>
+        <item>Blue cloudy sky</item>
+        <item>Blurry lights</item>
+        <item>Floral</item>
+        <item>Green leaves</item>
+        <item>Hearts</item>
+        <item>Meadow</item>
+        <item>Party</item>
+        <item>Rainbow</item>
+        <item>Snowflakes</item>
+        <item>Space</item>
+    </string-array>
+    <string name="title_activity_text_preview">TextPreview</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

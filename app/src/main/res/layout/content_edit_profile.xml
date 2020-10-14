@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ImageView
+        android:id="@+id/img_edit_dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/profile_icon" />
+
+    <Button
+        android:id="@+id/btn_change_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Select Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_edit_dp" />
+
+    <TextView
+        android:id="@+id/lbl_edit_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display name"
+        app:layout_constraintBottom_toTopOf="@+id/txt_edit_name"
+        app:layout_constraintStart_toStartOf="@+id/txt_edit_name" />
+
+    <EditText
+        android:id="@+id/txt_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_change_dp"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <TextView
+        android:id="@+id/lbl_edit_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status message"
+        app:layout_constraintBottom_toTopOf="@+id/txt_edit_status"
+        app:layout_constraintStart_toStartOf="@+id/txt_edit_status" />
+
+    <EditText
+        android:id="@+id/txt_edit_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:ems="10"
+        android:inputType="textShortMessage"
+        android:text="I'm using TIMECAPSULE App!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_change_dp"
+        app:layout_constraintVertical_bias="0.334" />
+
+    <Button
+        android:id="@+id/btn_save_edits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Save changes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_edit_dp"
+        app:layout_constraintVertical_bias="0.557" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

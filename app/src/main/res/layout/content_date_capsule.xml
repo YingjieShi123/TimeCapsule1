@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <EditText
+        android:id="@+id/txt_set_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textCapWords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <DatePicker
+        android:id="@+id/dp_capsule_date"
+        android:layout_width="253dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="20dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_set_title" />
+
+    <TimePicker
+        android:id="@+id/tp_open"
+        android:layout_width="248dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="time"
+        android:timePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dp_capsule_date" />
+
+    <Button
+        android:id="@+id/btn_to_fill_capsule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_time" />
+
+    <TextView
+        android:id="@+id/lbl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Capsule Title:"
+        app:layout_constraintBottom_toTopOf="@+id/txt_set_title"
+        app:layout_constraintStart_toStartOf="@+id/txt_set_title" />
+
+    <TextView
+        android:id="@+id/lbl_datepick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select opening date:"
+        app:layout_constraintBottom_toTopOf="@+id/dp_capsule_date"
+        app:layout_constraintStart_toStartOf="@+id/txt_set_title" />
+
+    <TextView
+        android:id="@+id/lbl_timepick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opening time"
+        app:layout_constraintBottom_toTopOf="@+id/tp_open"
+        app:layout_constraintStart_toStartOf="@+id/txt_set_title" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tp_open" />
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
